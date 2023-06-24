@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0 auto;
+    text-align: center;
+    z-index:1;/*描画を一番下に*/
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family:fantasy
+}
+
+#ans-btn {
+    display: flex;
+    justify-content: center;
+    z-index:1;/*描画を一番下に*/
+}
+
+#ans-btn button {
+    width: 1000px;
+    height: 400px;
+    font-size: 60px;
+    margin: 20px;
+    color:rgb(94, 255, 0);
+
+}
+
+body{
+	animation: bgchange 5.5s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+}
+
+@keyframes bgchange{
+      0%   {background:#ffbaac;}/*変化させたい色*/
+      25%  {background:#ffff78;}/*変化させたい色*/
+      50%  {background:#50ff81;}/*変化させたい色*/
+      75%  {background:#75ffef;}/*変化させたい色*/
+      90%  {background:#af92ff;}/*変化させたい色*/
+      100% {background:#ffbce9;}/*変化させたい色*/
+ }
